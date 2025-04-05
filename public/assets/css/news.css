@@ -1,0 +1,173 @@
+.news-container{
+    width: 100%;
+    display: flex;
+    gap: 100px;
+    padding: 20px 0;
+}
+
+.news-content {
+    width: 100%;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.news-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+
+.news-item {
+    display: flex;
+     
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--primary-color);
+    background-color: var(--white-color);
+    box-shadow: 4px 4px var(--primary-color);
+    transition: 0.3s;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+}
+
+.news-content-image{
+    width: 330px;
+    max-height: 180px;
+}
+
+.news-content-image img {
+    width: 330px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.news-content-section{
+    text-align: justify;
+    padding-left: 20px;
+}
+
+.news-content-title{
+    color: rgb(244, 54, 54);
+    padding-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.news-content-description{
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+/* 📌 Phân trang */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.page-numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.page-btn, .prev-btn, .next-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #f1f1f1;
+    font-family: var(--font-family);
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.page-btn:hover, .prev-btn:hover, .next-btn:hover {
+    background-color: #ddd;
+}
+
+.page-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
+
+.news-sidebar{
+    width: 100%;
+    flex: 1;
+}
+
+.news-sidebar h1{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.news-sidebar a{
+    width: 100%;
+}
+
+.news-sidebar a img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.article-list {
+    list-style: none;
+    padding: 0 10px;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.article-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.article-list li:last-child {
+    border-bottom: none;
+}
+
+.article-list img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+.article-list a {
+    text-align: justify;
+    font-weight: 600;
+    line-height: 1.5;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.article-list a:hover {
+    color: var(--primary-color); /* Màu cam đỏ */
+}

@@ -1,0 +1,128 @@
+input,
+select {
+    border-color: var(--primary-color) !important;
+}
+
+input[type="checkbox"]:checked {
+    accent-color: var(--primary-color);
+}
+
+.add-btn{
+    background-color: var(--primary-color);
+    border: none !important;
+    transition: linear 0.1s !important;
+}
+
+.add-btn:hover{
+    background-color: #065b6aec;
+}
+
+.add-btn:active{
+    scale: 0.98;
+    background-color: #065b6aec !important;
+}
+
+.cad-item{
+    margin-bottom: 24px;
+}
+
+.card{
+    border-color: #7bb3bd;
+    transition: linear 0.14s;
+}
+
+.card:hover{
+    scale: 0.99;
+}
+
+.card-body{
+    text-align: justify;
+}
+
+.btn-search{
+    background-color: #065b6aec !important;
+    transition: linear 0.1s !important;
+    border: none !important;
+}
+
+.btn-search:active{
+    scale: 0.98;
+}
+
+.edit-bnt{
+    height: 30px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: var(--primary-color);
+}
+
+.delete-btn:active{
+    scale: 0.98 !important;
+}
+
+.delete-icon{
+    height: 30px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.btn-outline-primary{
+    border: 1px solid var(--primary-color) !important;
+}
+
+.btn-outline-primary:hover{
+    background-color: var(--primary-color);
+}
+
+.btn-outline-primary:active{
+    background-color: #065b6aec !important;
+    scale: 0.98;
+}
+
+.btn-outline-primary:hover .edit-bnt{
+    color: var(--white-color);
+}
+
+/* 📌 Phân trang */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.page-numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.page-btn, .prev-btn, .next-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    font-family: var(--font-family);
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.page-btn:hover, .prev-btn:hover, .next-btn:hover {
+    background-color: #ddd;
+}
+
+.page-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
