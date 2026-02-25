@@ -37,7 +37,7 @@ Dự án được triển khai bằng **PHP + MySQL + HTML/CSS/JS** với cấu 
 
 ---
 
-## 📁 Cấu trúc thư mục
+## 📁 Cấu trúc thư mục chính
 
 ```txt
 Nhom-Kinh-Nhat-Kim/
@@ -93,3 +93,4 @@ Nhom-Kinh-Nhat-Kim/
 
 
 Chi tiết nghiệp vụ và dữ liệu của dự án thực tế không được chia sẻ do bản quyền công ty.
+
