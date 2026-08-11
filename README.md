@@ -1,96 +1,97 @@
-﻿## 📖 Giới thiệu
+# Nhôm kính Nhất Kim
 
-**Nhôm kính Nhất Kim** là website giới thiệu sản phẩm cho công ty Cổ phần Nhôm kính Nhất Kim.
+## Giới thiệu
 
-Dự án là phiên bản demo mô phỏng hệ thống quản lý/nội bộ (web app) được xây dựng trong thời gian thực tập tại Công ty TNHH Công nghệ và Truyền thông số Nam Anh. Mục tiêu là áp dụng các kiến thức: Lập trình web fullstack, xử lý backend, frontend, cơ sở dữ liệu và tương tác người dùng.
+**Nhôm kính Nhất Kim** là website giới thiệu, quảng cáo sản phẩm được xây dựng cho Công ty Cổ phần Nhôm kính Nhất Kim.
 
-Dự án được triển khai bằng **PHP + MySQL + HTML/CSS/JS** với cấu trúc backend và frontend tách biệt, có tính năng cơ bản như quản lý dữ liệu và giao diện người dùng.
+Đây là phiên bản demo được phát triển trong thời gian thực tập tại **Công ty TNHH Công nghệ và Truyền thông số Nam Anh**, nhằm mô phỏng một hệ thống web có cả phần quản trị và phần hiển thị nội dung cho người dùng.
 
-🌐 [Xem Demo](http://nhatkimwindow.com)
+Trong quá trình thực hiện, dự án được sử dụng để áp dụng các kiến thức về phát triển web fullstack với PHP, xử lý dữ liệu phía server, xây dựng giao diện frontend, thiết kế cơ sở dữ liệu và quản lý nội dung động.
 
----
+**Demo:** http://nhatkimwindow.com
 
-## ✨ Tính năng chính
+## Tính năng
 
-✔ Quản lý nội dung cơ bản qua form và database.
+* Quản lý và cập nhật nội dung thông qua Admin Panel.
+* Lưu trữ và truy xuất dữ liệu từ MySQL.
+* Upload và quản lý hình ảnh, file trên server.
+* Phân quyền khu vực quản trị.
+* Hiển thị nội dung động từ database trên website.
+* Tách các thành phần dùng chung như header, footer và cấu hình thành các partial riêng.
+* Xử lý URL và một số cấu hình server thông qua `.htaccess`.
 
-✔ Upload ảnh/file lên server.
+## Công nghệ
 
-✔ Phân quyền/Admin Panel (dành cho quản trị).
+* **PHP** – Xử lý backend, form và logic phía server.
+* **MySQL** – Lưu trữ và quản lý dữ liệu.
+* **HTML / CSS / JavaScript** – Xây dựng giao diện và các tương tác phía client.
+* **Apache / .htaccess** – Cấu hình server, URL và directory.
+* **Git / GitHub** – Quản lý mã nguồn và version control.
 
-✔ Trang công khai trả về nội dung động từ database.
+## Cấu trúc thư mục
 
-✔ Cấu trúc template với header, footer, layout tách biệt.
-
----
-
-## 🛠 Công nghệ sử dụng
-- **PHP:** Ngôn ngữ backend để xử lý logic máy chủ và tương tác với database.
-
-- **MySQL:** Hệ quản trị cơ sở dữ liệu để lưu trữ dữ liệu ứng dụng.
-
-- **HTML / CSS / JavaScript:** Xây dựng giao diện và tương tác người dùng.
-
-- **.htaccess:** Cấu hình URL và bảo mật directory.
-
-- **Uploads / Static Assets:** Thư mục chứa tài nguyên như hình ảnh, file upload.
-
----
-
-## 📁 Cấu trúc thư mục chính
-
-```txt
+```text
 Nhom-Kinh-Nhat-Kim/
-├── admin/                 # Backend admin panel
-├── database/              # SQL and DB assets
-├── includes/              # Shared partials (header, footer, config)
-├── public/                # Frontend public assets
-├── uploads/               # User-uploaded files
-├── index.php              # Entry point (Landing page)
-├── nhomkinhnhatkim.sql    # Schema & sample data
-├── .htaccess              # Server config
+├── admin/                 # Admin panel và chức năng quản trị
+├── database/              # Database scripts và SQL assets
+├── includes/              # Các thành phần dùng chung và cấu hình
+├── public/                # Frontend assets
+├── uploads/               # File và hình ảnh được upload
+├── index.php              # Entry point của website
+├── nhomkinhnhatkim.sql    # Database schema và sample data
+└── .htaccess              # Cấu hình Apache
 ```
----
 
-## 📌 Hướng dẫn chạy project (Demo)
+## Chạy project
 
-### 1. Import database:
+### 1. Import database
 
-- Mở phpMyAdmin hoặc Workbench
+Import file `nhomkinhnhatkim.sql` vào MySQL thông qua phpMyAdmin, MySQL Workbench hoặc công cụ quản lý database tương ứng.
 
-- Import file **nhomkinhnhatkim.sql**
+### 2. Cấu hình database
 
-### 2. Cấu hình kết nối DB:
+Cập nhật thông tin kết nối database trong file cấu hình của project:
 
-- Mở file cấu hình và chỉnh thông tin DB (host, user, pass).
+```text
+DB_HOST
+DB_NAME
+DB_USER
+DB_PASSWORD
+```
 
-### 3. Mở trên localhost:
+Các giá trị cụ thể phụ thuộc vào môi trường local của bạn.
 
-- Chạy Apache/PHP server (XAMPP, WAMP, Laragon).
+### 3. Chạy trên localhost
 
-- Mở file root index.php nhấp chuột phải chọn **PHP Server: Serve Project**
+Có thể sử dụng XAMPP, WAMP, Laragon hoặc PHP built-in server để chạy project.
 
-- Truy cập http://localhost:3000/index.php
----
+Ví dụ với PHP built-in server:
 
-## 🧠 Những gì đã học được
+```bash
+php -S localhost:3000
+```
 
-✔ Làm việc với backend thuần PHP và xử lý form dữ liệu.
+Sau đó truy cập:
 
-✔ Thiết kế database và quản lý schema MySQL.
+```text
+http://localhost:3000
+```
 
-✔ Cấu trúc giao diện với include/partials.
+## Những gì đã học được
 
-✔ Quản lý upload file, bảo mật đường dẫn.
+Thông qua dự án này, tôi có cơ hội thực hành và hiểu rõ hơn về:
 
-✔ Sử dụng GitHub để chia sẻ và version control.
+* Xây dựng website với PHP thuần và xử lý request phía server.
+* Xử lý form và CRUD với MySQL.
+* Thiết kế và tổ chức cấu trúc database.
+* Tách reusable components bằng PHP `include`.
+* Upload và quản lý file trên server.
+* Tổ chức cấu trúc project backend/frontend.
+* Cấu hình Apache và `.htaccess`.
+* Sử dụng Git và GitHub để quản lý source code.
 
----
+## Lưu ý
 
-## 📂 Lưu ý về bản quyền
+Đây là phiên bản demo được xây dựng lại dựa trên dự án thực tế trong thời gian thực tập.
 
-📌 Đây là phiên bản demo được dựng lại dựa trên dự án thực tập.
-
-
-Chi tiết nghiệp vụ và dữ liệu của dự án thực tế không được chia sẻ do bản quyền công ty.
-
+Các nghiệp vụ, dữ liệu và thông tin nội bộ của dự án thực tế không được đưa vào repository do liên quan đến quyền sở hữu và bảo mật của công ty.
